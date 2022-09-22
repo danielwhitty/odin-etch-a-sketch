@@ -1,9 +1,51 @@
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    background: steelblue;
+    font-family: 'Roboto', sans-serif;
+}
+
+html,
+body {
+    margin: 0;
+}
+
+.size-selector {
+    height: 60px;
+    width: 240px;
+    font-size: 32px;
+    border: black solid 2.5px;
+    border-radius: 0.75em;
+    margin-top: 32px;
+    background: white;
+}
+
+button:hover {
+    background: slategray;
+}
+
 .sketch-container {
     display: grid;
     height: 960px;
     width: 960px;
-    border: black solid 2px;
+    border: black solid 2.5px;
+    background: aliceblue;
+    border-radius: 1%;
+    margin-bottom: auto;
+    margin-top: auto;
 }
+
 .hover-colour {
     background-color: black;
+}
+
+.footer {
+    font-size: 20px;
 }
