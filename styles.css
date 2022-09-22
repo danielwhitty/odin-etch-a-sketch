@@ -1,0 +1,9 @@
+.sketch-container {
+    display: grid;
+    height: 960px;
+    width: 960px;
+    border: black solid 2px;
+}
+.hover-colour {
+    background-color: black;
+}
