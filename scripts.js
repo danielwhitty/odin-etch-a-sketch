@@ -12,7 +12,7 @@ function createDivs(num) {
             
             // Add colour to div when mousing over
             sketchDiv.addEventListener('mouseover', function () {
-                sketchDiv.classList.add('hover-colour');
+                sketchDiv.style.background = `${randomRGB()}`;
             });
 
             container.appendChild(sketchDiv);
@@ -38,3 +38,9 @@ btnSize.addEventListener('click', function() {
     removeDivs();
     createDivs(gridSize);
 });
+
+function randomRGB() {
+    return `rgb(${Math.floor(Math.random() * 255)}, 
+        ${Math.floor(Math.random() * 255)}, 
+        ${Math.floor(Math.random() * 255)})`;
+}
